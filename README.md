@@ -26,5 +26,3 @@ you should do with it, and what you shouldn't.
     or the like. If you don't understand any part of these instructions, you probably shouldn't be running it. If any harm comes to you or your computer because you ran this software, don't blame me: I don't recommend that *anyone* run it.
 
     You're welcome. :) 
-
-by Mordechai T. Abzug <morty+www@frakir.org> 
