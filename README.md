@@ -1,14 +1,14 @@
 bash-httpd
 ==========
 
-This is a real neat peice of kit ;) A web server in all of ~100 lines of bash.
-Below is some commentary by the original author on what the software is, what
-you should do with it, and what you shouldn't.
+The worlds first (and hopefully last) micro web server implementation. A web server in all of ~100 lines of bash.
+
+Below is some commentary on what the software is, what you should do with it, and what you shouldn't.
 
 # What is it?
-    Bash-httpd is a web server written in bash, the GNU bourne shell replacement. 
-# Why did you write it?
-    Because I could. :) It doesn't have any features that aren't in a million other web servers, and is ridiculously slow. But isn't the idea cool? :) 
+    Bash-httpd is a micro web server written in bash, the GNU bourne shell replacement. 
+# Why does it exist?
+    It doesn't have any features that aren't in a million other web servers, and is ridiculously slow. But isn't the idea cool? :) 
 # What's the current version?
     The sole script in this repository is versioned. 
 # Why should I run it instead of Apache or [insert favorite server software here].
