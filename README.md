@@ -19,8 +19,9 @@ you should do with it, and what you shouldn't.
 ```console
 foo@bar:~$ git clone https://github.com/lewismc/bash-httpd.git
 foo@bar:~$ sudo ln -s /path/to/bash-httpd/bash-httpd-0.03.sh /usr/local/bin/bash-httpd
+foo@bar:~$ mkdir www     // put your files in this directory
 ```
-    Then edit the config variables at the beginning of the script. You may need to insert a line for it in /etc/inetd.conf, running as nobody. You probably also want to wrap the port.
+    Then edit the config variables at the beginning of the script tyo suit your environment. You may need to insert a line for it in /etc/inetd.conf, running as nobody. You probably also want to wrap the port.
 
     If you're not root, get ahold of Netcat, preferably compile it with -DGAPING_SECURITY_HOLE (because it *is* a gaping security hole), and run:
 ```console

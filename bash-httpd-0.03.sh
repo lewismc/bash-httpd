@@ -1,16 +1,10 @@
 #!/bin/bash
-
-# bash-httpd, by Morty Abzug <morty@sanctuary.arbutus.md.us>
-# v0.02: morty: 1998/11/22: does simple file queries
-# v0.01: morty: 1998/11/??: proof of concept
-
 # Configurable variables
-PATH=/bin:/usr/bin
-DOC_ROOT=~morty/www/server
+PATH=/bin:/usr/bin:/usr/local/bin
+DOC_ROOT=~/Downloads/bash-httpd/www/
 DEF_HTML=index.html
 DEF_DIR=www
 LOG_FACILITY=local1
-
 # End of configurables
 HTTP_VERSION="HTTP/1.0"
 SERVER="bash-httpd/0.02"
@@ -40,9 +34,7 @@ error(){
 	if [ "$2" ]; then problem="$2"; else problem="$err"; fi
 cat <<EOF
 Content-Type: text/html
-
-<html> <head> <title> $problem </title> 
-<body> <h1> $num $problem </h1> $problem </body> </html>
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title> $problem </title></head><body><h1> $num $problem </h1> $problem </body></html>
 EOF
 	log err "$problem"
 	exit 1
@@ -52,8 +44,6 @@ log(){
 	level="$1"; message="$2"
 	logger -p $LOG_FACILITY."$level" "$program[$$]: $method $url $version: $message"
 }
-
-
 
 read method url version
 
@@ -124,4 +114,3 @@ case $type in
 		error 501 "Messed up internal type"
 		;;
 esac
-
