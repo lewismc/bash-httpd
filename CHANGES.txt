@@ -1,3 +1,4 @@
+# v0.04: kaotisk: added some mime types
 # v0.03: lewismc: 2021/01/21 ensure bash-httpd will run as of 2021...!
 # bash-httpd, by Morty Abzug <morty@sanctuary.arbutus.md.us>
 # v0.02: morty: 1998/11/22: does simple file queries

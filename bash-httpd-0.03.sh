@@ -7,7 +7,7 @@ DEF_DIR=www
 LOG_FACILITY=local1
 # End of configurables
 HTTP_VERSION="HTTP/1.0"
-SERVER="bash-httpd/0.02"
+SERVER="bash-httpd/0.04"
 
 CR=`printf "\015"`
 program="${0##/*/}"
@@ -106,6 +106,9 @@ case $type in
 			*.gif) 		mime=image/gif;;
 			*.gz|*.tgz)	mime=application/binary;;
 			*.txt|*.text)	mime=text/plain;;
+			*.css)	mime=text/css;;
+			*.js)	mime=text/javascript;;
+			*.json)	mime=application/json;;
 			*)		mime=application/binary;;
 		esac
 		echo Content-Type: $mime; echo; cat $file
